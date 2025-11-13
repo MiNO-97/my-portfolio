@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Lao:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+* {
+  font-family: "Noto Serif Lao", serif;
+  font-weight: 600;
+}
