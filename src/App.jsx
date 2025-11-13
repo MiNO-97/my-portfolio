@@ -16,6 +16,16 @@ import {
   X,
 } from "lucide-react";
 
+// Import images
+import profileImage from "./assets/images/IMG_2472 2.jpeg";
+import resImage from "./assets/images/Res.png";
+import menuImage from "./assets/images/menu.png";
+import bikeImage from "./assets/images/bike.png";
+import itImage from "./assets/images/it.png";
+import hrImage from "./assets/images/hr.png";
+import agentcyImage from "./assets/images/agentcy.png";
+import folioImage from "./assets/images/folio.png";
+
 export default function Portfolio() {
   // State for theme management - ຈັດການ theme ສະຫວ່າງ/ມືດ
   const [darkMode, setDarkMode] = useState(false);
@@ -66,7 +76,7 @@ export default function Portfolio() {
     name: "ທ້າວ ທະວີສັກ ພັນທະວົງ (ມິໂນ່)",
     title: "Front-end (Junoior) Developer",
     bio: "ສະບາຍດີ ຂ້ອຍແມ່ນ Front-end Developer ທີ່ມີຄວາມກະຕືລືລົ້ນໃນການສ້າງເວັບໄຊທ์ທີ່ສວຍງາມ ແລະ ໃຊ້ງານງ່າຍ. ມີປະສົບການໃນການໃຊ້ PHP, MySQL, React, JavaScript, Bootstrap, Tailwind CSS.",
-    image: "/src/assets/images/IMG_2472 2.jpeg",
+    image: profileImage,
   };
 
   // ຂໍ້ມູນການສຶກສາ - Education Data
@@ -115,7 +125,7 @@ export default function Portfolio() {
       title: "Restaurant Management System",
       description:
         "ບົດໂຄງການຈົບຊັ້ນ ລະບົບຈັດການຮ້ານອາຫານດ້ວຍ PHP ແລະ MySQL (ເພື່ອການສຶກສາ)",
-      image: "/src/assets/images/Res.png",
+      image: resImage,
       tech: ["PHP", "Bootstrap", "MySQL"],
       link: "https://posmaeyai.42web.io/",
       github: ["https://github.com/MiNO-97/my-pos-restaurant/"],
@@ -124,7 +134,7 @@ export default function Portfolio() {
       title: "Smart Menu Website",
       description:
         "ເວັບໄຊສຳລັບເມນູຮ້ານອາຫານ ທີ່ໃຊ້ Tailwind CSS ຕົກແຕ່ງ ແລະ PHP ໃນການຈັດການລະບົບຫຼັງບ້ານ (ເພື່ອການສຶກສາ)",
-      image: "/src/assets/images/Menu.png",
+      image: menuImage,
       tech: ["PHP", "TailwindCSS", "MySQL"],
       admin: ["https://menumaeyai.rf.gd/login.php"],
       link: "https://menumaeyai.rf.gd",
@@ -133,7 +143,7 @@ export default function Portfolio() {
       title: "POS Bikes electronic system",
       description:
         "ລະບົບການຈັດການຮ້ານຂາຍລົດຈັກໄຟຟ້າ ດ້ວຍພາສາ PHP, Bootstrap ແລະ MySQL (ເພື່ອການສຶກສາ)",
-      image: "/src/assets/images/bike.png",
+      image: bikeImage,
       tech: ["PHP", "Bootstrap", "MySQL"],
       link: "https://pos-bike.infinityfree.me/",
     },
@@ -141,7 +151,7 @@ export default function Portfolio() {
       title: "IT-Online system",
       description:
         "ລະບົບການຈັດການຂາຍອຸປະກອນໄອທີ ມີທັງໜ້າເວັບ ແລະ ການຈັດການຂໍ້ມູນຫຼັງບ້ານ ດ້ວຍພາສາ PHP, Bootstrap ແລະ MySQL (ເພື່ອການສຶກສາ)",
-      image: "/src/assets/images/it.png",
+      image: itImage,
       tech: ["PHP", "Bootstrap", "MySQL"],
       github: ["https://github.com/MiNO-97/my-webside-admin-itonline/"],
     },
@@ -149,21 +159,21 @@ export default function Portfolio() {
       title: "Hr-Management system",
       description:
         "ລະບົບການຈັດການຂໍ້ມູນພະນັກງານ ແລະ ຈັດການເງິນເດືອນ ດ້ວຍພາສາ PHP, Bootstrap ແລະ MySQL (ເພື່ອການສຶກສາ)",
-      image: "/src/assets/images/hr.png",
+      image: hrImage,
       tech: ["PHP", "Bootstrap", "MySQL"],
       github: ["https://github.com/MiNO-97/Hr-Management/"],
     },
     {
       title: "Agentcy Web Front-end for learning",
       description: "ເວັບໄຊສຳລັບການຝຶກຂຽນ Front-end (ເພື່ອການສຶກສາ)",
-      image: "/src/assets/images/agentcy.png",
+      image: agentcyImage,
       tech: ["React", "TailwindCSS"],
       github: ["https://github.com/MiNO-97/learn-Front-end-AgencyWeb"],
     },
     {
       title: "Portfolio Web Front-end for learning",
       description: "ເວັບໄຊສຳລັບການຝຶກຂຽນ Front-end (ເພື່ອການສຶກສາ)",
-      image: "/src/assets/images/folio.png",
+      image: folioImage,
       tech: ["React", "TailwindCSS"],
       github: ["https://github.com/MiNO-97/my-portfolio"],
     },
@@ -222,8 +232,8 @@ export default function Portfolio() {
       {/* Navigation Bar - ແຖບເມນູ */}
       <nav
         className={`fixed w-full top-0 z-50 transition-all duration-300 ${darkMode
-            ? "bg-gray-800 shadow-lg shadow-gray-900/50"
-            : "bg-white shadow-lg"
+          ? "bg-gray-800 shadow-lg shadow-gray-900/50"
+          : "bg-white shadow-lg"
           }`}
       >
         <div className="max-w-6xl mx-auto px-4 py-4">
@@ -251,8 +261,8 @@ export default function Portfolio() {
               <button
                 onClick={toggleDarkMode}
                 className={`p-2 rounded-lg transition-all duration-300 ${darkMode
-                    ? "bg-gray-700 hover:bg-gray-600"
-                    : "bg-gray-200 hover:bg-gray-300"
+                  ? "bg-gray-700 hover:bg-gray-600"
+                  : "bg-gray-200 hover:bg-gray-300"
                   }`}
                 aria-label="Toggle dark mode"
               >
@@ -358,8 +368,8 @@ export default function Portfolio() {
                 <div
                   key={index}
                   className={`p-6 rounded-xl transition-all duration-300 hover:scale-105 ${darkMode
-                      ? "bg-gray-800 hover:bg-gray-750"
-                      : "bg-white hover:shadow-xl"
+                    ? "bg-gray-800 hover:bg-gray-750"
+                    : "bg-white hover:shadow-xl"
                     }`}
                 >
                   <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">
@@ -383,8 +393,8 @@ export default function Portfolio() {
                 <div
                   key={index}
                   className={`p-6 rounded-xl transition-all duration-300 hover:scale-105 ${darkMode
-                      ? "bg-gray-800 hover:bg-gray-750"
-                      : "bg-white hover:shadow-xl"
+                    ? "bg-gray-800 hover:bg-gray-750"
+                    : "bg-white hover:shadow-xl"
                     }`}
                 >
                   <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">
@@ -408,8 +418,8 @@ export default function Portfolio() {
                 <div
                   key={index}
                   className={`p-6 rounded-xl transition-all duration-300 hover:scale-105 ${darkMode
-                      ? "bg-gray-800 hover:bg-gray-750"
-                      : "bg-white hover:shadow-xl"
+                    ? "bg-gray-800 hover:bg-gray-750"
+                    : "bg-white hover:shadow-xl"
                     }`}
                 >
                   <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">
@@ -571,8 +581,8 @@ export default function Portfolio() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`flex items-center gap-4 p-6 rounded-xl transition-all duration-300 hover:scale-105 ${darkMode
-                      ? "bg-gray-800 hover:bg-gray-750"
-                      : "bg-white hover:shadow-xl"
+                    ? "bg-gray-800 hover:bg-gray-750"
+                    : "bg-white hover:shadow-xl"
                     }`}
                 >
                   <div className="p-3 rounded-lg bg-linear-to-r from-blue-600 to-purple-600 text-white">
