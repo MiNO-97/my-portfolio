@@ -165,7 +165,7 @@ export default function Portfolio() {
       description: "ເວັບໄຊສຳລັບການຝຶກຂຽນ Front-end (ເພື່ອການສຶກສາ)",
       image: "/src/assets/images/folio.png",
       tech: ["React", "TailwindCSS"],
-      github: ["https://github.com/MiNO-97/My-Portfolio"],
+      github: ["https://github.com/MiNO-97/my-portfolio"],
     },
   ];
 
